@@ -1,4 +1,4 @@
-# Only-me pattern
+# Only-Me Anti-Pattern
 
 ## Case
 - MLエンジニアが個人環境で開発し、開発プログラム、データセット、モデル、評価を他者がレビュー、再現できない状態。
@@ -25,5 +25,5 @@
 - 開発プログラムをレポジトリで管理し、コードレビューを行う。
 
 ## Related design pattern
-- [Batch training pattern](./../../Batch-training-pattern/design_ja.md)
-- [Pipeline training pattern](./../../Pipeline-training-pattern/design_ja.md)
+- [Batch Training Pattern](./../../Batch-training-pattern/design_ja.md)
+- [Pipeline Training Pattern](./../../Pipeline-training-pattern/design_ja.md)

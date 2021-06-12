@@ -26,5 +26,5 @@
 - 入力データに計測単位を含める。
 
 ## Related design pattern
-- [Prediction log pattern](./Operation-patterns/Prediction-log-pattern/design_ja.md)
-- [Prediction monitoring pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ja.md)
+- [Prediction Log Pattern](./Operation-patterns/Prediction-log-pattern/design_ja.md)
+- [Prediction Monitoring Pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ja.md)

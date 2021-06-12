@@ -1,4 +1,4 @@
-# Online bigsize pattern
+# Online Bigsize Anti-Pattern
 
 ## Case
 - 실시간 대응이 필요한 온라인 서비스의 경우 또는 시스템에 예측에 오랜 시간이 걸리는 큰 모델을 배치하는 경우
@@ -28,8 +28,8 @@
 - 만약 비용면에서 허락한다면, GPU를 사용하거나 스케일 아웃 하는 방법도 고려해보세요.
 
 ## Related design pattern
-- [Prediction cache pattern](./../../Prediction-cache-pattern/design_ko.md)
-- [Data cache pattern](./../../Data-cache-pattern/design_ko.md)
+- [Prediction Cache Pattern](./../../Prediction-cache-pattern/design_ko.md)
+- [Data Cache Pattern](./../../Data-cache-pattern/design_ko.md)
 - [Loading test pattern](./../../../QA-patterns/Loading-test-pattern/design_ko.md)
-- [Prediction log pattern](./../../../Operation-patterns/Prediction-log-pattern/design_ko.md)
-- [Prediction monitoring pattern](./../../../Operation-patterns/Prediction-monitoring-pattern/design_ko.md)
+- [Prediction Log Pattern](./../../../Operation-patterns/Prediction-log-pattern/design_ko.md)
+- [Prediction Monitoring Pattern](./../../../Operation-patterns/Prediction-monitoring-pattern/design_ko.md)

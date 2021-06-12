@@ -1,4 +1,4 @@
-# Training code in serving pattern
+# Training Code in Serving Anti-Pattern
 
 ## Case
 - 학습, 실험, 평가에만 사용되야 하는 코드가 서빙 코드에 들어간 경우. 

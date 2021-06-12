@@ -1,6 +1,6 @@
-# Parameter-based serving pattern
+# Parameter-Based Serving Pattern
 
-## Usecase
+## Use Case
 - 파라미터를 사용하여 예측을 제어하고 싶은 경우.
 - 룰 베이스로 제어가 가능한 경우. 
 
@@ -20,7 +20,7 @@
 - 모든 케이스를 커버할 수는 없습니다. 
 - 룰이 늘어남에 따라 운영의 복잡도가  올라갈 수 있습니다. 
 
-## Needs consideration
+## Considerations
 - 어떠한 케이스를 어떤 변수로 제어 가능할지.  
 
 ## Sample

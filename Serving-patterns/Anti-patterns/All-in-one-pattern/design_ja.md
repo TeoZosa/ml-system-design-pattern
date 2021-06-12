@@ -1,4 +1,4 @@
-# All-in-one pattern
+# All-In-One Anti-Pattern
 
 ## Case
 - 複数の推論モデルを稼働させるシステムで、全てのモデルが同一のサーバで稼働している状態。
@@ -26,4 +26,4 @@
 ## Related design pattern
 - [Prep-pred pattern](./../../Prep-pred-pattern/design_ja.md)
 - [Microservice vertical pattern](./../../Microservice-vertical-pattern/design_ja.md)
-- [Microservice horizontal pattern](./../../Microservice-horizontal-pattern/design_ja.md)
+- [Microservice Horizontal Pattern](./../../Microservice-horizontal-pattern/design_ja.md)

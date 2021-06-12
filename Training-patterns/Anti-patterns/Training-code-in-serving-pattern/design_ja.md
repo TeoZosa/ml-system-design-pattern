@@ -1,4 +1,4 @@
-# Training code in serving pattern
+# Training Code in Serving Anti-Pattern
 
 ## Case
 - 学習でしか使わないコードが推論器に残っている状態。

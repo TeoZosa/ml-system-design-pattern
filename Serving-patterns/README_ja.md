@@ -1,13 +1,13 @@
 # Serving patterns
 
 
-- [Web single pattern](./Web-single-pattern/design_ja.md)
+- [Web Single Pattern](./Web-single-pattern/design_ja.md)
 
 
-- [Synchronous pattern](./Synchronous-pattern/design_ja.md)
+- [Synchronous Pattern](./Synchronous-pattern/design_ja.md)
 
 
-- [Asynchronous pattern](./Asynchronous-pattern/design_ja.md)
+- [ASynchronous Pattern](./Asynchronous-pattern/design_ja.md)
 
 
 - [Batch pattern](./Batch-pattern/design_ja.md)
@@ -19,19 +19,19 @@
 - [Microservice vertical pattern](./Microservice-vertical-pattern/design_ja.md)
 
 
-- [Microservice horizontal pattern](./Microservice-horizontal-pattern/design_ja.md)
+- [Microservice Horizontal Pattern](./Microservice-horizontal-pattern/design_ja.md)
 
 
-- [Prediction cache pattern](./Prediction-cache-pattern/design_ja.md)
+- [Prediction Cache Pattern](./Prediction-cache-pattern/design_ja.md)
 
 
-- [Data cache pattern](./Data-cache-pattern/design_ja.md)
+- [Data Cache Pattern](./Data-cache-pattern/design_ja.md)
 
 
-- [Prediction circuit break pattern](./Prediction-circuit-break-pattern/design_ja.md)
+- [Prediction Circuit Breaker Pattern](./Prediction-circuit-break-pattern/design_ja.md)
 
 
-- [Multiple stage prediction pattern](./Multiple-stage-prediction-pattern/design_ja.md)
+- [Multistage Prediction Pattern](./Multiple-stage-prediction-pattern/design_ja.md)
 
 - [Serving template pattern](./Serving-template-pattern/design_ja.md)
 
@@ -40,6 +40,6 @@
 
 - [Antipatterns](./Anti-patterns/README_ja.md)
 
-  - [Online bigsize pattern](./Anti-patterns/Online-bigsize-pattern/design_ja.md)
+  - [Online Bigsize Anti-Pattern](./Anti-patterns/Online-bigsize-pattern/design_ja.md)
 
-  - [All-in-one pattern](./Anti-patterns/All-in-one-pattern/design_ja.md)
+  - [All-In-One Anti-Pattern](./Anti-patterns/All-in-one-pattern/design_ja.md)

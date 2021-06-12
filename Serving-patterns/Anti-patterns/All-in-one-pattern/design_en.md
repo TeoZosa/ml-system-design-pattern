@@ -1,30 +1,60 @@
-# All-in-one pattern
+# All-In-One Anti-Pattern
 
 ## Case
-- When you are running multiple inference models in one server or one server group.
+
+- Multiple inference models deployed in a single container, server, or server group.
 
 ## Situation
-While there are many usecases you need to deploy multiple inference models for one product, it is recommended not to run them in one same server or a same server group. Running all the models in a monorithic environment may barely reduce server cost, though it will probably increase operational cost with difficulty of software development, troubleshooting and update.<br>
-A disadvantage for its model development in this situation is that you will get limitation in your library selection. Libraries and algorithms for machine learning have been changing rapidly. Developing a model aligned with another model development will become limitation in algorithm choice, that you may not be your best choice.<br>
-Once you get an incident in a monorithic architecture, you may need to trace all logs to find its root cause. Isolating fault in a system becomes difficult, as well as troubleshooting a machine learning model, such that prediction is invalid, requires tracing multiple logics, which will be increase in time to repair.<br>
-Updating system and model requires comparably long time as well. Depending on how you install your model, [model in image patter](../../../Operation-patterns/Model-in-image-pattern/design_en.md) or [model load pattern](../../../Operation-patterns/Model-load-pattern/design_en.md), an update in the system will require an unnecessary update in a model. Frequency of system update and model update may not be synchronized, though those will be triggered simultaneously on a monorithic system, with increase in operational cost.<br>
-It is recommended to deploy in microservice architecture of one model per one server on running multiple models.
+
+While there are situations where multiple inference models must be deployed for a single
+product, they should not be deployed in the same container, server, server group.
+
+Running multiple models in a monolithic environment may yield a negligible cost
+reduction but does so at the expense of increased operational cost due to increased
+system complexity.
+
+- One disadvantage of this anti-pattern is that all models share the same libraries.
+  Given the rapid pace of ML library and algorithm development, tightly coupling models
+  together in this way prevents models from using the exact libraries and versions that
+  are most appropriate for each model.
+
+- Another disadvantage arises during incident resolution. Root-cause analysis in a
+  monolithic architecture necessitates log tracing across logs for the entire monolith
+  regardless of the number of culprit components. Isolating faults and troubleshooting
+  invalid model predictions becomes extremely difficult, increasing the mean time to
+  repair.
+
+- Finally, another disadvantage occurs during system or model updates. Depending on how
+  the models themselves are
+  deployed, [Model-In-Image Pattern](../../../Operation-patterns/Model-in-image-pattern/design_en.md)
+  or [Model-Load Pattern](../../../Operation-patterns/Model-load-pattern/design_en.md),
+  a system update for one component will require an unnecessary model update for all
+  models, and vice versa. Despite the fact that system and model release cadences may
+  differ, in a monolithic system updates will nevertheless be triggered simultaneously,
+  increasing operational cost.
+
+It is recommended to deploy in microservice architecture of one model per one server on
+running multiple models.
 
 ## Diagram
+
 ![diagram](diagram.png)
 
-
 ## Pros
-- Barely reasonable cost.
+
+- Negligible cost savings
 
 ## Cons
+
 - Increase in dev and ops cost.
 
 ## Work around
-- Develop in a single responsibility for a server and a model, in microservice.
 
+- Adhere to the Single-Responsibility Principle, using microservices to enforce the 
+  separation of concerns between servers and models. 
 
 ## Related design pattern
+
 - [Prep-pred pattern](./../../Prep-pred-pattern/design_en.md)
 - [Microservice vertical pattern](./../../Microservice-vertical-pattern/design_en.md)
-- [Microservice horizontal pattern](./../../Microservice-horizontal-pattern/design_en.md)
+- [Microservice Horizontal Pattern](./../../Microservice-horizontal-pattern/design_en.md)

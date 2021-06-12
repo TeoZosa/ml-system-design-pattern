@@ -1,6 +1,6 @@
 # pattern name
 
-## Usecase
+## Use Case
 - 
 
 ## Architecture
@@ -16,5 +16,5 @@
 ## Cons
 - 
 
-## Needs consideration
+## Considerations
 - 

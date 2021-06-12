@@ -1,12 +1,12 @@
 # Serving patterns
 
-- [Web single pattern](./Web-single-pattern/design_ko.md)
+- [Web Single Pattern](./Web-single-pattern/design_ko.md)
 
 
-- [Synchronous pattern](./Synchronous-pattern/design_ko.md)
+- [Synchronous Pattern](./Synchronous-pattern/design_ko.md)
 
 
-- [Asynchronous pattern](./Asynchronous-pattern/design_ko.md)
+- [ASynchronous Pattern](./Asynchronous-pattern/design_ko.md)
 
 
 - [Batch pattern](./Batch-pattern/design_ko.md)
@@ -18,19 +18,19 @@
 - [Microservice vertical pattern](./Microservice-vertical-pattern/design_ko.md)
 
 
-- [Microservice horizontal pattern](./Microservice-horizontal-pattern/design_ko.md)
+- [Microservice Horizontal Pattern](./Microservice-horizontal-pattern/design_ko.md)
 
 
-- [Prediction cache pattern](./Prediction-cache-pattern/design_ko.md)
+- [Prediction Cache Pattern](./Prediction-cache-pattern/design_ko.md)
 
 
-- [Data cache pattern](./Data-cache-pattern/design_ko.md)
+- [Data Cache Pattern](./Data-cache-pattern/design_ko.md)
 
 
-- [Prediction circuit break pattern](./Prediction-circuit-break-pattern/design_ko.md)
+- [Prediction Circuit Breaker Pattern](./Prediction-circuit-break-pattern/design_ko.md)
 
 
-- [Multiple stage prediction pattern](./Multiple-stage-prediction-pattern/design_ko.md)
+- [Multistage Prediction Pattern](./Multiple-stage-prediction-pattern/design_ko.md)
 
 - [Serving template pattern](./Serving-template-pattern/design_ko.md)
 
@@ -38,6 +38,6 @@
 
 - [Antipatterns](./Anti-patterns/README_ko.md)
 
-  - [Online bigsize pattern](./Anti-patterns/Online-bigsize-pattern/design_ko.md)
+  - [Online Bigsize Anti-Pattern](./Anti-patterns/Online-bigsize-pattern/design_ko.md)
 
-  - [All-in-one pattern](./Anti-patterns/All-in-one-pattern/design_ko.md)
+  - [All-In-One Anti-Pattern](./Anti-patterns/All-in-one-pattern/design_ko.md)

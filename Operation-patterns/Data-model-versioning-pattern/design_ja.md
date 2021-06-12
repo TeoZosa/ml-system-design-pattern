@@ -1,6 +1,6 @@
 # [WIP]Data model versioning pattern
 
-## Usecase
+## Use Case
 - データおよびモデルのバージョン管理をしたいとき（本番サービスで機械学習を使う全てのシチュエーション）
 
 ## Architecture
@@ -75,6 +75,6 @@
 ## Cons
 - コードレポジトリ、モデルレポジトリ、DWHと複数の環境でコンポーネントが管理される。
 
-## Needs consideration
+## Considerations
 - 各種レポジトリやDWHの選択。
 - レポジトリ、DWHの使用方法。

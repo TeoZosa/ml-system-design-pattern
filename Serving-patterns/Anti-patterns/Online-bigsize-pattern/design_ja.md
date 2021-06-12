@@ -1,4 +1,4 @@
-# Online bigsize pattern
+# Online Bigsize Anti-Pattern
 
 ## Case
 - オンラインのサービスやリアルタイムな処理が必要なシステムで推論に時間を要するモデルを配備している状態。
@@ -27,8 +27,8 @@ Webサービスにせよバッチ処理にせよ、ひとつの処理を完了�
 - コストが許すのであればスケールアウトやスケールアップ、GPUの利用等を検討する。
 
 ## Related design pattern
-- [Prediction cache pattern](./../../Prediction-cache-pattern/design_ja.md)
-- [Data cache pattern](./../../Data-cache-pattern/design_ja.md)
+- [Prediction Cache Pattern](./../../Prediction-cache-pattern/design_ja.md)
+- [Data Cache Pattern](./../../Data-cache-pattern/design_ja.md)
 - [Loading test pattern](./../../../QA-patterns/Loading-test-pattern/design_ja.md)
-- [Prediction log pattern](./../../../Operation-patterns/Prediction-log-pattern/design_ja.md)
-- [Prediction monitoring pattern](./../../../Operation-patterns/Prediction-monitoring-pattern/design_ja.md)
+- [Prediction Log Pattern](./../../../Operation-patterns/Prediction-log-pattern/design_ja.md)
+- [Prediction Monitoring Pattern](./../../../Operation-patterns/Prediction-monitoring-pattern/design_ja.md)

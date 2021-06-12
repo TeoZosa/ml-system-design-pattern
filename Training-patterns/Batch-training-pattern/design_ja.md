@@ -1,6 +1,6 @@
-# Batch training pattern
+# Batch Training Pattern
 
-## Usecase
+## Use Case
 - 定期バッチでモデル学習を実行したいとき
 
 ## Architecture
@@ -30,6 +30,6 @@
 ## Cons
 - ジョブのエラー時対応を検討しておく必要があり、完全自動運用は困難な場合が多い。
 
-## Needs consideration
+## Considerations
 - ジョブ管理サーバの選定。
 - エラー時の対応方法。

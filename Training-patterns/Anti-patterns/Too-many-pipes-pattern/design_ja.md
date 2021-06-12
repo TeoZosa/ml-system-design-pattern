@@ -1,4 +1,4 @@
-# Too many pipes pattern
+# Too Many Pipes Anti-Pattern
 
 ## Case
 - 一つの目的や学習のための学習パイプラインが多様且つ複雑な状態。
@@ -23,5 +23,5 @@
 - データは整理すること。
 
 ## Related design pattern
-- [Batch training pattern](./../../Batch-training-pattern/design_ja.md)
-- [Pipeline training pattern](./../../Pipeline-training-pattern/design_ja.md)
+- [Batch Training Pattern](./../../Batch-training-pattern/design_ja.md)
+- [Pipeline Training Pattern](./../../Pipeline-training-pattern/design_ja.md)

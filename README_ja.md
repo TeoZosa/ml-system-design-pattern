@@ -22,13 +22,13 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 ## Patterns
 ### [Serving patterns](./Serving-patterns/README_ja.md)
 本番サービスで推論サーバを稼働させ運用するパターン。
-- [Web single pattern](./Serving-patterns/Web-single-pattern/design_ja.md)
+- [Web Single Pattern](./Serving-patterns/Web-single-pattern/design_ja.md)
 
 
-- [Synchronous pattern](./Serving-patterns/Synchronous-pattern/design_ja.md)
+- [Synchronous Pattern](./Serving-patterns/Synchronous-pattern/design_ja.md)
 
 
-- [Asynchronous pattern](./Serving-patterns/Asynchronous-pattern/design_ja.md)
+- [ASynchronous Pattern](./Serving-patterns/Asynchronous-pattern/design_ja.md)
 
 
 - [Batch pattern](./Serving-patterns/Batch-pattern/design_ja.md)
@@ -40,16 +40,16 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 - [Microservice vertical pattern](./Serving-patterns/Microservice-vertical-pattern/design_ja.md)
 
 
-- [Microservice horizontal pattern](./Serving-patterns/Microservice-horizontal-pattern/design_ja.md)
+- [Microservice Horizontal Pattern](./Serving-patterns/Microservice-horizontal-pattern/design_ja.md)
 
 
-- [Prediction cache pattern](./Serving-patterns/Prediction-cache-pattern/design_ja.md)
+- [Prediction Cache Pattern](./Serving-patterns/Prediction-cache-pattern/design_ja.md)
 
 
-- [Data cache pattern](./Serving-patterns/Data-cache-pattern/design_ja.md)
+- [Data Cache Pattern](./Serving-patterns/Data-cache-pattern/design_ja.md)
 
 
-- [Prediction circuit break pattern](./Serving-patterns/Prediction-circuit-break-pattern/design_ja.md)
+- [Prediction Circuit Break Pattern](./Serving-patterns/Prediction-circuit-break-pattern/design_ja.md)
 
 
 - [Multiple stage prediction pattern](./Serving-patterns/Multiple-stage-prediction-pattern/design_ja.md)
@@ -61,16 +61,16 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 
 - [Antipatterns](./Serving-patterns/Anti-patterns/README_ja.md)
 
-  - [Online bigsize pattern](./Serving-patterns/Anti-patterns/Online-bigsize-pattern/design_ja.md)
+  - [Online Bigsize Anti-Pattern](./Serving-patterns/Anti-patterns/Online-bigsize-pattern/design_ja.md)
 
-  - [All-in-one pattern](./Serving-patterns/Anti-patterns/All-in-one-pattern/design_ja.md)
+  - [All-In-One Anti-Pattern](./Serving-patterns/Anti-patterns/All-in-one-pattern/design_ja.md)
 
 ### [QA patterns](./QA-patterns/README_ja.md)
 機械学習のモデルおよび推論器を評価するためのパターン。
 - [Shadow AB-testing pattern](./QA-patterns/Shadow-ab-test-pattern/design_ja.md)
 
 
-- [Online AB-testing pattern](./QA-patterns/Online-ab-test-pattern/design_ja.md)
+- [Online AB Test Pattern](./QA-patterns/Online-ab-test-pattern/design_ja.md)
 
 
 - [Loading test pattern](./QA-patterns/Loading-test-pattern/design_ja.md)
@@ -82,42 +82,42 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 
 ### [Training patterns](./Training-patterns/README_ja.md)
 学習パイプラインを構成するパターン。
-- [Batch training pattern](./Training-patterns/Batch-training-pattern/design_ja.md)
+- [Batch Training Pattern](./Training-patterns/Batch-training-pattern/design_ja.md)
 
 
-- [Pipeline training pattern](./Training-patterns/Pipeline-training-pattern/design_ja.md)
+- [Pipeline Training Pattern](./Training-patterns/Pipeline-training-pattern/design_ja.md)
 
 
-- [Parameter and architecture search pattern](./Training-patterns/Parameter-and-architecture-search-pattern/design_ja.md)
+- [Parameter and Architecture Search Pattern](./Training-patterns/Parameter-and-architecture-search-pattern/design_ja.md)
 
 
 - [Antipatterns](./Training-patterns/Anti-patterns/README_ja.md)
 
-  - [Only-me pattern](./Training-patterns/Anti-patterns/Only-me-pattern/design_ja.md)
+  - [Only-Me Anti-Pattern](./Training-patterns/Anti-patterns/Only-me-pattern/design_ja.md)
 
-  - [Training code in serving pattern](./Training-patterns/Anti-patterns/Training-code-in-serving-pattern/design_ja.md)
+  - [Training Code in Serving Anti-Pattern](./Training-patterns/Anti-patterns/Training-code-in-serving-pattern/design_ja.md)
 
-  - [Too many pipes pattern](./Training-patterns/Anti-patterns/Too-many-pipes-pattern/design_ja.md)
+  - [Too Many Pipes Anti-Pattern](./Training-patterns/Anti-patterns/Too-many-pipes-pattern/design_ja.md)
 
 
 ### [Operation patterns](./Operation-patterns/README_ja.md)
 推論器を管理、運用するためのパターン。
-- [Model-in-image pattern](./Operation-patterns/Model-in-image-pattern/design_ja.md)
+- [Model-In-Image Pattern](./Operation-patterns/Model-in-image-pattern/design_ja.md)
 
 
-- [Model-load pattern](./Operation-patterns/Model-load-pattern/design_ja.md)
+- [Model-Load Pattern](./Operation-patterns/Model-load-pattern/design_ja.md)
 
 
 - [Data model versioning pattern](./Operation-patterns/Data-model-versioning-pattern/design_ja.md)
 
 
-- [Prediction log pattern](./Operation-patterns/Prediction-log-pattern/design_ja.md)
+- [Prediction Log Pattern](./Operation-patterns/Prediction-log-pattern/design_ja.md)
 
 
-- [Prediction monitoring pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ja.md)
+- [Prediction Monitoring Pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ja.md)
 
 
-- [Parameter-based serving pattern](./Operation-patterns/Parameter-based-serving-pattern/design_ja.md)
+- [Parameter-Based Serving Pattern](./Operation-patterns/Parameter-based-serving-pattern/design_ja.md)
 
 
 - [Condition-based-serving pattern](./Operation-patterns/Condition-based-serving-pattern/design_ja.md)
@@ -125,16 +125,16 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 
 - [Antipatterns](./Operation-patterns/Anti-patterns/README_ja.md)
 
-  - [No logging pattern](./Operation-patterns/Anti-patterns/No-logging-pattern/design_ja.md)
+  - [No Logging Pattern](./Operation-patterns/Anti-patterns/No-logging-pattern/design_ja.md)
 
   - [Nobody knows pattern](./Operation-patterns/Anti-patterns/Nobody-knows-pattern/design_ja.md)
 
 ### [Lifecycle patterns](./Lifecycle-patterns/README_ja.md)
 複数のパターンを組み合わせて機械学習システム全体を構成するパターン。
-- [Train-then-serve pattern](./Lifecycle-patterns/Train-then-serve-pattern/design_ja.md)
+- [Train-Then-Serve Pattern](./Lifecycle-patterns/Train-then-serve-pattern/design_ja.md)
 
 
-- [Training-to-serving pattern](./Lifecycle-patterns/Training-to-serving-pattern/design_ja.md)
+- [Training-To-Serving Pattern](./Lifecycle-patterns/Training-to-serving-pattern/design_ja.md)
 
 
 - [Antipatterns](./Lifecycle-patterns/Anti-patterns/README_ja.md)

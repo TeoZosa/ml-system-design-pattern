@@ -1,17 +1,17 @@
 # Training patterns
-- [Batch training pattern](./Batch-training-pattern/design_en.md)
+- [Batch Training Pattern](./Batch-training-pattern/design_en.md)
 
 
-- [Pipeline training pattern](./Pipeline-training-pattern/design_en.md)
+- [Pipeline Training Pattern](./Pipeline-training-pattern/design_en.md)
 
 
-- [Parameter and architecture search pattern](./Parameter-and-architecture-search-pattern/design_en.md)
+- [Parameter and Architecture Search Pattern](./Parameter-and-architecture-search-pattern/design_en.md)
 
 
 - [Antipatterns](./Anti-patterns/README.md)
 
-  - [Only-me pattern](./Anti-patterns/Only-me-pattern/design_en.md)
+  - [Only-Me Anti-Pattern](./Anti-patterns/Only-me-pattern/design_en.md)
 
-  - [Training code in serving pattern](./Anti-patterns/Training-code-in-serving-pattern/design_en.md)
+  - [Training Code in Serving Anti-Pattern](./Anti-patterns/Training-code-in-serving-pattern/design_en.md)
 
-  - [Too many pipes pattern](./Anti-patterns/Too-many-pipes-pattern/design_en.md)
+  - [Too Many Pipes Anti-Pattern](./Anti-patterns/Too-many-pipes-pattern/design_en.md)

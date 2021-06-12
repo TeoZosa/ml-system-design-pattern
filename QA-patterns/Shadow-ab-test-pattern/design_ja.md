@@ -1,6 +1,6 @@
-# Shadow AB test pattern
+# Shadow AB Test Pattern
 
-## Usecase
+## Use Case
 - 新推論モデルが本番データで問題なく推論できることを確認したいとき
 - 新推論サーバが本番アクセスの負荷に耐えられることを確認したいとき
 
@@ -21,7 +21,7 @@
 ## Cons
 - 新推論サーバのためのコストが発生。
 
-## Needs consideration
+## Considerations
 - 収集するログおよび新旧モデルの評価方法、試験期間、停止・継続の判断基準
 
 ## Sample

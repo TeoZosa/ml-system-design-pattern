@@ -1,6 +1,6 @@
 # Microservice vertical pattern
 
-## Usecase
+## Use Case
 - 순서대로 여러 예측을 해야하는 경우
 - 여러 예측이 있고, 예측끼리 의존 관계가 있는 경우
 
@@ -26,6 +26,6 @@ Microservice vertical pattern을 사용하면 여러 모델을 순서대로 실�
 - 이전 예측 지연으로 병목이 될 수 있습니다.
 - 복잡한 시스템 구조와 워크플로우
 
-## Needs consideration
+## Considerations
 - 필요한 서비스 수준을 만족하기 위해, 구체적인 성능 튜닝을 고려할 필요가 있습니다.
 - 시스템 구조가 복잡해질 수 있기 때문에 인터페이스와 서버들을 공통화하는 것이 좋습니다. 

@@ -1,6 +1,6 @@
 # [WIP] Data model versioning pattern
 
-## Usecase
+## Use Case
 - 데이터와 모델 버전 관리를 해야 하는 경우(실제 운영 환경에서 머신러닝을 사용해야 하는 대부분의 경우)
 
 ## Architecture
@@ -78,6 +78,6 @@
 ## Cons
 - 코드, 모델, 데이터들을 여러 환경에서 관리해야 합니다. 
 
-## Needs consideration
+## Considerations
 - 레파지토리와 데이터 웨어하우스 선택. 
 - 워크플로우와 레파지토리, 데이터 웨어하우스 사용 방법.

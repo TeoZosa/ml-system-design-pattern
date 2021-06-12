@@ -1,4 +1,4 @@
-# Too many pipes pattern
+# Too Many Pipes Anti-Pattern
 
 ## Case
 - 학습 파이프라인이 너무 다양하고 복잡한 경우. 
@@ -23,5 +23,5 @@
 - 항상 데이터가 정리되어야 합니다.
 
 ## Related design pattern
-- [Batch training pattern](./../../Batch-training-pattern/design_ko.md)
-- [Pipeline training pattern](./../../Pipeline-training-pattern/design_ko.md)
+- [Batch Training Pattern](./../../Batch-training-pattern/design_ko.md)
+- [Pipeline Training Pattern](./../../Pipeline-training-pattern/design_ko.md)

@@ -1,6 +1,6 @@
-# Parameter and architecture search pattern
+# Parameter and Architecture Search Pattern
 
-## Usecase
+## Use Case
 - 機械学習モデルの学習前にモデルの最適なハイパーパラメータやアーキテクチャを自動探索したいとき
 - 手動でモデル設計やハイパーパラメータ調整をすることが難しいとき
 
@@ -21,7 +21,7 @@
 - 探索の設定値を用意する必要がある。
 - 探索中の計算リソースにコストが発生する。
 
-## Needs consideration
+## Considerations
 - パラメータ探索か、アーキテクチャ探索か
 - パラメータ探索アルゴリズムまたはアーキテクチャ探索アルゴリズムの選定
 - 各探索アルゴリズムの設定値

@@ -1,30 +1,55 @@
-# Model load pattern
+# Model-Load Pattern
 
-## Usecase
-- When update cycle of a model is more frequent than server image update.
-- When you want to reuse a server image for serving multiple models.
+## Use Case
+
+- Model update cadence is more frequent than server image update cadence.
+- Reuse a single server image to serve multiple models.
 
 ## Architecture
-While productionizing an ml service on a cloud platform (or on containers) becomes a common practice, it is still an important consideration to manage and version machine learning model along with its server image. By building server (or container image) and model file separately, you may be able to decouple the management of the model and the server. In the model-load pattern, you build and save the prediction server image and model file separately, making the image light-weight with respect to size. It is also possible and responsible, to design the image for common use. Such a design allows reusing the same image on various prediction models, making this pattern highly effective when your models are compatible with the same image.<br>
-To release a prediction service using this pattern, the prediction server needs to be deployed first into the platform, and then it downloads the model file as its initial task, before starting the prediction process. You may consider using an environmental variable to configure which model needs to be run on the server.<br>
-A difficulty of the pattern is to manage dependent library for the models. You are required to match the library versions that the model uses and the ones that is installed in the image. It will be needed to make a table of supported libraries for each image and models, thus resulting in increase of operation.
+
+In the Model-Load Pattern, the prediction server image is decoupled from the model
+file (in contrast to
+the [Model-In-Image Pattern](../Model-in-image-pattern/design_en.md)), and consequently,
+from model management (and vice versa). This reduces the image size and, when combined
+with model-agnostic development, enables reuse of the image across various compatible
+prediction models.
+
+While productionizing an ML service on a cloud platform (or on containers) becomes a
+common practice, it is still an important consideration to manage and version machine
+learning model along with its server image.
+
+To release a prediction service using this pattern, the prediction server is first
+deployed onto the platform, downloading the model file as its initial task before
+starting the prediction process.
+
+- An environmental variable can be used to configure which model needs to be run on the
+  server.
+- One issue is model library management as the library in the server image must match
+  the library used by the model, and vice versa.
+    - A table of supported libraries for each image and models needs to be maintained,
+      resulting in increased operational complexity.
 
 ## Diagram
+
 ![diagram](diagram.png)
 
-
 ## Pros
-- Separate model versioning and image versioning.
-- Reuse of server image.
-- Light image size.
-- Change management of server image becomes easier.
+
+- Model and image versioning decoupling.
+- Server image reuse
+- Minimal image size
+- Simplified server image change management
 
 ## Cons
-- It may take longer to start the service. The server although up should be treated as unhealthy until the model load completes.
-- A new requirement of matching supported library versions between images and models is applicable for this pattern.
 
-## Needs consideration
+- Service start times may suffer.
+- The server should only pass health checks once the model is successfully loaded
+- Additional overhead of tracking supported library versions between images and models
+
+## Considerations
+
 - Dependent version management of server image and model file.
 
 ## Sample
+
 https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter3_release_patterns/model_load_pattern

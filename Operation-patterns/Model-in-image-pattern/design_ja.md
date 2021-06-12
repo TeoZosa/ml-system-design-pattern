@@ -1,6 +1,6 @@
-# Model-in-image pattern
+# Model-In-Image Pattern
 
-## Usecase
+## Use Case
 - サーバイメージと推論モデルのバージョンを一致させたい場合
 
 ## Architecture
@@ -19,7 +19,7 @@
 - モデル学習からサーバイメージ構築までのパイプラインを定義する必要あり。
 - 推論サーバイメージの構築やサーバ配備の所要時間が長くなる。
 
-## Needs consideration
+## Considerations
 - モデル学習からサーバイメージ構築までのパイプライン定義方法。
 
 

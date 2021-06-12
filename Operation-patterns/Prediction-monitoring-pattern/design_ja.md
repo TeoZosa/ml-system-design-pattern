@@ -1,6 +1,6 @@
-Prediction monitoring pattern
+Prediction Monitoring Pattern
 
-## Usecase
+## Use Case
 - 推論結果を監視し、推論傾向が異常な場合に通報したいとき
 - 推論の値や集計が想定された範囲内にあることを担保したいとき
 
@@ -26,7 +26,7 @@ Prediction monitoring pattern
 ## Cons
 - 不要な監視・通報はコスト増の原因になる。
 
-## Needs consideration
+## Considerations
 - 推論器のサービスレベル
 - 監視・通報の頻度やレベル、通報先、体制
 - 異常時の対応方法やマニュアル

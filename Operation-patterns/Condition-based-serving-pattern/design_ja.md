@@ -1,6 +1,6 @@
-# Condition-based serving pattern
+# Condition-Based Serving Pattern
 
-## Usecase
+## Use Case
 - 状況によって推論対象に大きな違いがある場合
 - 複数の推論モデルをルールベースで使い分け可能な場合
 
@@ -20,7 +20,7 @@
 ## Cons
 - モデル数に応じて運用負荷が増大する。
 
-## Needs consideration
+## Considerations
 - 状況の分割方法。
 - モデル数と運用負荷のバランス。
 

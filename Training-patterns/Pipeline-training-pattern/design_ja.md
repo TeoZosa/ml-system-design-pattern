@@ -1,6 +1,6 @@
-# Pipeline training pattern
+# Pipeline Training Pattern
 
-## Usecase
+## Use Case
 - 学習パイプラインのリソースを分割し、各ジョブでライブラリ選定や流用を可能にしたいとき
 - 各ジョブ毎にデータの状態や進行を記録し、リトライを簡単にしたいとき
 - 各ジョブの実行を個別にコントロールしたいとき
@@ -22,5 +22,5 @@
 - 各ジョブリソースの管理が必要になる。
 - システムが複雑になる傾向にある。
 
-## Needs consideration
+## Considerations
 - ジョブのリソース管理、ライブラリ管理、バージョン管理方法。

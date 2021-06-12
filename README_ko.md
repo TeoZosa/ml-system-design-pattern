@@ -23,13 +23,13 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 ### [Serving patterns](./Serving-patterns/README_ko.md)
 서빙 패턴은 실제 운영 환경에서 머신러닝 모델을 이용할 수 있도록 만드는 일련의 시스템 디자인들입니다. 
  
-- [Web single pattern](./Serving-patterns/Web-single-pattern/design_ko.md)
+- [Web Single Pattern](./Serving-patterns/Web-single-pattern/design_ko.md)
 
 
-- [Synchronous pattern](./Serving-patterns/Synchronous-pattern/design_ko.md)
+- [Synchronous Pattern](./Serving-patterns/Synchronous-pattern/design_ko.md)
 
 
-- [Asynchronous pattern](./Serving-patterns/Asynchronous-pattern/design_ko.md)
+- [ASynchronous Pattern](./Serving-patterns/Asynchronous-pattern/design_ko.md)
 
 
 - [Batch pattern](./Serving-patterns/Batch-pattern/design_ko.md)
@@ -41,16 +41,16 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 - [Microservice vertical pattern](./Serving-patterns/Microservice-vertical-pattern/design_ko.md)
 
 
-- [Microservice horizontal pattern](./Serving-patterns/Microservice-horizontal-pattern/design_ko.md)
+- [Microservice Horizontal Pattern](./Serving-patterns/Microservice-horizontal-pattern/design_ko.md)
 
 
-- [Prediction cache pattern](./Serving-patterns/Prediction-cache-pattern/design_ko.md)
+- [Prediction Cache Pattern](./Serving-patterns/Prediction-cache-pattern/design_ko.md)
 
 
-- [Data cache pattern](./Serving-patterns/Data-cache-pattern/design_ko.md)
+- [Data Cache Pattern](./Serving-patterns/Data-cache-pattern/design_ko.md)
 
 
-- [Prediction circuit break pattern](./Serving-patterns/Prediction-circuit-break-pattern/design_ko.md)
+- [Prediction Circuit Break Pattern](./Serving-patterns/Prediction-circuit-break-pattern/design_ko.md)
 
 
 - [Multiple stage prediction pattern](./Serving-patterns/Multiple-stage-prediction-pattern/design_ko.md)
@@ -60,9 +60,9 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 
 - [Antipatterns](./Serving-patterns/Anti-patterns/README_ko.md)
 
-  - [Online bigsize pattern](./Serving-patterns/Anti-patterns/Online-bigsize-pattern/design_ko.md)
+  - [Online Bigsize Anti-Pattern](./Serving-patterns/Anti-patterns/Online-bigsize-pattern/design_ko.md)
 
-  - [All-in-one pattern](./Serving-patterns/Anti-patterns/All-in-one-pattern/design_ko.md)
+  - [All-In-One Anti-Pattern](./Serving-patterns/Anti-patterns/All-in-one-pattern/design_ko.md)
 
 ### [QA patterns](./QA-patterns/README_ko.md)
 예측 서버와 모델 평가하기 위한 패턴들입니다. 
@@ -70,7 +70,7 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 - [Shadow AB-testing pattern](./QA-patterns/Shadow-ab-test-pattern/design_ko.md)
 
 
-- [Online AB-testing pattern](./QA-patterns/Online-ab-test-pattern/design_ko.md)
+- [Online AB Test Pattern](./QA-patterns/Online-ab-test-pattern/design_ko.md)
 
 
 - [Loading test pattern](./QA-patterns/Loading-test-pattern/design_ko.md)
@@ -83,50 +83,50 @@ https://github.com/shibuiwilliam/ml-system-in-actions
 학습 파이프라인을 구성하기 위한 패턴들입니다. 
 
 
-- [Batch training pattern](./Training-patterns/Batch-training-pattern/design_ko.md)
+- [Batch Training Pattern](./Training-patterns/Batch-training-pattern/design_ko.md)
 
 
-- [Pipeline training pattern](./Training-patterns/Pipeline-training-pattern/design_ko.md)
+- [Pipeline Training Pattern](./Training-patterns/Pipeline-training-pattern/design_ko.md)
 
 
-- [Parameter and architecture search pattern](./Training-patterns/Parameter-and-architecture-search-pattern/design_ko.md)
+- [Parameter and Architecture Search Pattern](./Training-patterns/Parameter-and-architecture-search-pattern/design_ko.md)
 
 
 - [Antipatterns](./Training-patterns/Anti-patterns/README_ko.md)
 
-  - [Only-me pattern](./Training-patterns/Anti-patterns/Only-me-pattern/design_ko.md)
+  - [Only-Me Anti-Pattern](./Training-patterns/Anti-patterns/Only-me-pattern/design_ko.md)
 
-  - [Training code in serving pattern](./Training-patterns/Anti-patterns/Training-code-in-serving-pattern/design_ko.md)
+  - [Training Code in Serving Anti-Pattern](./Training-patterns/Anti-patterns/Training-code-in-serving-pattern/design_ko.md)
 
-  - [Too many pipes pattern](./Training-patterns/Anti-patterns/Too-many-pipes-pattern/design_ko.md)
+  - [Too Many Pipes Anti-Pattern](./Training-patterns/Anti-patterns/Too-many-pipes-pattern/design_ko.md)
 
 ### [Operation patterns](./Operation-patterns/README_ko.md)
 ML 학습 시스템의 설정과 로깅, 모니터링, 알람 시스템을 위한 관리 및 운영 패턴들입니다.
 
 
-- [Model-in-image pattern](./Operation-patterns/Model-in-image-pattern/design_ko.md)
+- [Model-In-Image Pattern](./Operation-patterns/Model-in-image-pattern/design_ko.md)
 
 
-- [Model-load pattern](./Operation-patterns/Model-load-pattern/design_ko.md)
+- [Model-Load Pattern](./Operation-patterns/Model-load-pattern/design_ko.md)
 
 
 - [Data model versioning pattern](./Operation-patterns/Data-model-versioning-pattern/design_ko.md)
 
 
-- [Prediction log pattern](./Operation-patterns/Prediction-log-pattern/design_ko.md)
+- [Prediction Log Pattern](./Operation-patterns/Prediction-log-pattern/design_ko.md)
 
 
-- [Prediction monitoring pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ko.md)
+- [Prediction Monitoring Pattern](./Operation-patterns/Prediction-monitoring-pattern/design_ko.md)
 
 
-- [Parameter-based serving pattern](./Operation-patterns/Parameter-based-serving-pattern/design_ko.md)
+- [Parameter-Based Serving Pattern](./Operation-patterns/Parameter-based-serving-pattern/design_ko.md)
 
 
 - [Condition-based-serving pattern](./Operation-patterns/Condition-based-serving-pattern/design_ko.md)
 
 - [Antipatterns](./Operation-patterns/Anti-patterns/README_ko.md)
 
-  - [No logging pattern](./Operation-patterns/Anti-patterns/No-logging-pattern/design_ko.md)
+  - [No Logging Pattern](./Operation-patterns/Anti-patterns/No-logging-pattern/design_ko.md)
 
   - [Nobody knows pattern](./Operation-patterns/Anti-patterns/Nobody-knows-pattern/design_ko.md)
 
@@ -134,10 +134,10 @@ ML 학습 시스템의 설정과 로깅, 모니터링, 알람 시스템을 위�
 ### [Lifecycle patterns](./Lifecycle-patterns/README_ko.md)
 실제 운영을 위한 ML 시스템 전체를 구성하기 위해 여러 패턴들을 조합한 패턴들입니다. 
 
-- [Train-then-serve pattern](./Lifecycle-patterns/Train-then-serve-pattern/design_ko.md)
+- [Train-Then-Serve Pattern](./Lifecycle-patterns/Train-then-serve-pattern/design_ko.md)
 
 
-- [Training-to-serving pattern](./Lifecycle-patterns/Training-to-serving-pattern/design_ko.md)
+- [Training-To-Serving Pattern](./Lifecycle-patterns/Training-to-serving-pattern/design_ko.md)
 
 
 - [Antipatterns](./Lifecycle-patterns/Anti-patterns/README_ko.md)

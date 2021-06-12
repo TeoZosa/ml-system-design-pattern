@@ -1,5 +1,5 @@
 # Serving Antipatterns
 
-- [Online bigsize pattern](./Online-bigsize-pattern/design_ja.md)
+- [Online Bigsize Anti-Pattern](./Online-bigsize-pattern/design_ja.md)
 
-- [All-in-one pattern](./All-in-one-pattern/design_ja.md)
+- [All-In-One Anti-Pattern](./All-in-one-pattern/design_ja.md)

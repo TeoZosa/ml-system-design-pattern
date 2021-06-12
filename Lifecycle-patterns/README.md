@@ -1,5 +1,5 @@
 # Lifecycle patterns
 
-- [Train-then-serve pattern](./Train-then-serve-pattern/design_en.md)
+- [Train-Then-Serve Pattern](./Train-then-serve-pattern/design_en.md)
 
-- [Training-to-serving pattern](./Training-to-serving-pattern/design_en.md)
+- [Training-To-Serving Pattern](./Training-to-serving-pattern/design_en.md)

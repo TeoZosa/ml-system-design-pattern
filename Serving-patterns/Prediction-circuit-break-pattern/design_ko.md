@@ -1,6 +1,6 @@
-# Prediction circuit break pattern
+# Prediction Circuit Breaker Pattern
 
-## Usecase
+## Use Case
 - 예측 요청량 또는 빈도가 갑자기 증가할 가능성이 있는 경우.
 - 갑작스러운 요청에 빠르게 응답할만큼 빠르게 스케일 아웃할 수 없는 경우.
 - 100% 응답할 필요가 없는 경우.
@@ -26,6 +26,6 @@ Prediction circuit breaker pattern은 스케일 아웃이 성공할 때까지 `c
 ## Cons
 - 취소된 요청에 대한 대안이 필요합니다.
 
-## Needs consideration
+## Considerations
 - 취소된 요청에 대한 대안 및 워크플로우.
 - circuit breaking limit은 일반적 서비스 요청 증가에 대응할 수 있을만큼 높아야 합니다.

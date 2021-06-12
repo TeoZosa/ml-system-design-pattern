@@ -1,6 +1,6 @@
-# Prediction log pattern
+# Prediction Log Pattern
 
-## Usecase
+## Use Case
 - 서비스 개선을 위해 예측, 지연 시간 등 각종 로그를 사용하고자 할 때. 
 - 방대한 로그량에 데이터 웨어하우스 부하가 우려될 때. 
 - 로그를 사용하여 모니터링 및 알림을 보내고 싶을 때. 
@@ -21,7 +21,7 @@
 ## Cons
 - 로그 양에 따라 비용이 증가할 수 있습니다. 
 
-## Needs consideration
+## Considerations
 - 로그 수집 빈도와 로그 레벨
 - 저장 빈도와 백업.
 - 분석의 목적. 

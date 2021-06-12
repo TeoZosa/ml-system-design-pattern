@@ -1,6 +1,6 @@
-# Train-then-serve pattern
+# Train-Then-Serve Pattern
 
-## Usecase
+## Use Case
 - 機械学習モデルを本番環境で使うためのワークフローをデザインしたいとき
 - 学習とリリースを別のワークフローで実行したいとき
 - 学習後にモデルを人手で評価し、リリース判定をしたいとき
@@ -25,7 +25,7 @@
 ## Cons
 - モデルのリリースにマニュアル実行が必要。
 
-## Needs consideration
+## Considerations
 - 学習パターン、QAパターン、サービング・パターンの組み合わせ方法。
 - モデルのリリース判定基準。
 - モデルのリリース頻度。

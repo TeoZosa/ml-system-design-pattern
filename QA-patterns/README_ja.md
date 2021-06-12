@@ -3,7 +3,7 @@
 - [Shadow AB-testing pattern](./Shadow-ab-test-pattern/design_ja.md)
 
 
-- [Online AB-testing pattern](./Online-ab-test-pattern/design_ja.md)
+- [Online AB Test Pattern](./Online-ab-test-pattern/design_ja.md)
 
 
 - [Loading test pattern](./Loading-test-pattern/design_ja.md)

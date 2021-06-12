@@ -1,6 +1,6 @@
-# Model-in-image pattern
+# Model-In-Image Pattern
 
-## Usecase
+## Use Case
 - 서비스 환경과 모델의 버전을 통합 관리하는 경우. 
 
 ## Architecture
@@ -21,7 +21,7 @@
 - 모델 학습과 이미지 빌드의 전체적인 파이프라인을 만들어야 합니다. 
 - 이미지 빌드와 배포 시간이 길어질 수 있습니다. 
 
-## Needs consideration
+## Considerations
 - 모델 학습부터 이미지 빌드까지의 파이프라인 정의
 
 

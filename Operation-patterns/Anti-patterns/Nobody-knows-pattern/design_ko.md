@@ -25,5 +25,5 @@
 - 입력 데이터의 단위도 포함합니다.
 
 ## Related design pattern
-- [Prediction log pattern](./Operation-patterns/Prediction-log-pattern/design_en.md)
-- [Prediction monitoring pattern](./Operation-patterns/Prediction-monitoring-pattern/design_en.md)
+- [Prediction Log Pattern](./Operation-patterns/Prediction-log-pattern/design_en.md)
+- [Prediction Monitoring Pattern](./Operation-patterns/Prediction-monitoring-pattern/design_en.md)

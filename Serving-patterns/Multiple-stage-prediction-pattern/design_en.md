@@ -1,23 +1,56 @@
-# Multiple stage prediction pattern
+# Multistage Prediction Pattern
 
-## Usecase
-- To use ML prediction for interactive application.
+## Use Case
+
+- ML prediction for interactive applications.
 - When you have lightweight prediction and heavy prediction for one purpose.
 
 ## Architecture
-The multiple stage prediction pattern is available when its workflow is to respond to its client in multiple stages. ML model in general tends to be lightweight for table and numerical data, while heavy for unstructured data, such as image and text. Some services require to have a quick response, with adding better prediction later to improve user experience. For web applications, it is important to take a balance of speed and accuracy, and especially for interactive applications, it is possible to consider a usecase where you first return a quick prediction, and then add the better ones in the next screen or downward. The pattern is effective to these interactive applications.<br>
-The pattern contains two prediction servers. One is to respond quick synchronously, and another one to predict later asynchronously. The first one is used to respond quickly with a fare accuracy using REST or GRPC interface. The latter will be slower, so asynchronous queue or messaging service is useful. The models to be in production depends on the requirement for the quality of prediction and speed to respond, though it might be separated with the data to be used, for instance numerical and categorical data for the synchronous prediction, and the image and text for the asynchronous, if the system uses multiple modality.
+
+The Multistage Prediction Pattern is available when a workflow is amenable to multiple
+predictions, each of which is to be returned to clients at different stages.
+
+Oftentimes, prediction quality scales with model size, and consequently, inference time.
+
+For web and interactive applications specifically, it is important to maintain a balance
+of speed and accuracy. In some cases, a good strategy is to initially return a fast,
+sufficient prediction which can be replaced/added onto by a longer but better prediction
+in the next screen or later on in the user flow.
+
+The pattern leverages two prediction servers; one which provides a quick, synchronous
+response, and another which provides a longer, asynchronous response.
+
+- The first provides fairly accurate and fast response, typically via a REST or gRPC
+  API.
+- The second provides a richer prediction at the cost of a much longer inference time,
+  so it is typically served by an asynchronous queue or messaging service.
+
+The choice of models to be used in each stage primarily depend on prediction quality and
+response speed requirements. In the multimodal case, this may also correspond to the
+categories of the data ingested/predicted.
+
+In general, model size (and thus prediction time) tends to be smaller for table and
+numerical data and larger for unstructured data, such as image and text.
+
+Some services require to have a quick response times with improved user experience via
+better prediction a future concern.
+
+For instance, the quick, synchronous prediction may operate on numerical and categorical
+data while longer, asynchronous prediction may operate on image and text data.
 
 ## Diagram
+
 ![diagram](diagram.png)
 
-
 ## Pros
-- Respond quickly and then predict better.
+
+- Exploits both quick predictions and longer but better predictions.
 
 ## Cons
-- You need multiple services and interfaces.
 
-## Needs consideration
+- Multiple services and interfaces required which increases overall complexity.
+
+## Considerations
+
 - Balance of speed, accuracy and user experience.
 - How to provide the heavy predictions.

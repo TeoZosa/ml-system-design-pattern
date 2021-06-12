@@ -1,4 +1,4 @@
-# No logging pattern
+# No Logging Pattern
 
 ## Case
 - 로그나 프로파일을 관리하지 않는 경우. 
@@ -22,5 +22,5 @@
 - 추적 가능한 이벤트 로그를 정의하고 구현해야 합니다. 
 
 ## Related design pattern
-- [Prediction log pattern](./../../Prediction-log-pattern/design_en.md)
-- [Prediction monitoring pattern](./../../Prediction-monitoring-pattern/design_en.md)
+- [Prediction Log Pattern](./../../Prediction-log-pattern/design_en.md)
+- [Prediction Monitoring Pattern](./../../Prediction-monitoring-pattern/design_en.md)

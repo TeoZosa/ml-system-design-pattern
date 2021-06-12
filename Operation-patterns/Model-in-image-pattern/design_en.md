@@ -1,26 +1,49 @@
-# Model-in-image pattern
+# Model-In-Image Pattern
 
-## Usecase
-- When you want to unify versions of service environment and prediction model.
+## Use Case
+
+- Service environment and prediction model versioning unification.
 
 ## Architecture
-While productionizing an ml service on a cloud platform (or on containers) becomes a common practice, it is still an important consideration to manage and version machine learning model along with its server image. The easiest way to do so is by including the model file into the server or container image. In the model-in-image pattern, you build a server or container image with the model file contained in it. This aligns the model training and image building in one workflow. This also makes the image version and model version unique, this way their version alignment with each other is not lost.<br>
-You build your image after the model training completes. To deploy the prediction service, you can then pull and run the image on the production platform.<br>
-A difficulty of the pattern is that the image building latency tends to get long and image size increase. Since the image building starts once the training completes, you will want to make a workflow for this to go through without any errors or recoverables. Also its deployment time will be long as downloading an image takes long because of the image size.
+
+In the Model-In-Image Pattern, you build a server or container image which directly
+contains the model file. This enables unified versioning and management of a particular
+machine learning model along with its server image which is an increasingly important
+consideration Given that productionizing an ML service on a cloud platform and/or
+containers is a common practice
+
+- This unifies model training and image building within a single workflow, implicitly
+  guaranteeing model and image version alignment.
+
+- Images are built after the model training completes. To deploy the prediction service,
+  you simply pull and run the image on the production platform.
+
+One issue with this pattern is that the image size, and consequently, image build and
+download times increase proportionally with model size.
+
+- Since images are built immediately after training completes, you will want to make a
+  standardized (preferably automated) workflow to preempt errors and enable rollbacks.
+
+- You must factor in image download times for deployments.
 
 ## Diagram
+
 ![diagram](diagram.png)
 
-
 ## Pros
-- Uniquely identify a server image with model file version.
+
+- Uniquely identify a model file version by the server/container image version.
 
 ## Cons
-- You need to define a complete pipeline of a model training and image building.
-- Takes longer to build image and deploy.
 
-## Needs consideration
-- Pipeline definition.
+- A model training and image building pipeline must be defined.
+- Image building and deployment latency may be problematic.
+
+## Considerations
+
+- The exact design of the standardized, ideally automated, image building/deployment
+  pipeline.
 
 ## Sample
+
 https://github.com/shibuiwilliam/ml-system-in-actions/tree/main/chapter3_release_patterns/model_in_image_pattern

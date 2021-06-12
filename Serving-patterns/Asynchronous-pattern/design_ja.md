@@ -1,6 +1,6 @@
-# Asynchronous pattern
+# ASynchronous Pattern
 
-## Usecase
+## Use Case
 - 直後の動作が推論結果に依存しないワークフローのとき
 - 呼び出し元のクライアントと推論結果の出力先を分離するとき
 
@@ -23,7 +23,7 @@
 - キューやキャッシュが必要になる。
 - リアルタイムな処理には向いていない。
 
-## Needs consideration
+## Considerations
 - 推論のトリガーを検討する必要がある。
   - キューで実装する場合：FIFOで推論。
   - キャッシュで実装する場合：キャッシュの有無で推論。

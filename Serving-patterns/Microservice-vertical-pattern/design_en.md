@@ -1,31 +1,60 @@
-# Microservice vertical pattern
+# Microservice Vertical Pattern
 
-## Usecase
-- When you need to run several inferences in order
-- When you have several inferences, and they have dependencies
+## Use Case
+
+- Multiple inferences which will be executed in cascade, either by choice or out of
+  necessity due to ordering dependencies between inferences (i.e. some topological
+  ordering)
 
 ## Architecture
-The microservice vertical pattern allows you to run multiple model in order. The pattern deploys prediction models in separate servers or containers as service. You execute prediction request from top to bottom synchronously, and gather the results to respond to the client. If there is dependencies of order for one another, the microservice vertical pattern is a good choice. It also allows you to separate maintenance lifecycle as well as fault isolation for deploying the servers independently.<br>
-You may place a proxy in between client and prediction services. You may expect the proxy to control the data retrieval and prediction order away from the client. You may let the proxy or each predictors to do additional data retrieval (`Diagram2`). An advantage of proxy to get data is that it will decrease the number of requests to DWH or storage to reduce overhead, while the latter will let you control the data structure depending on each prediction model, that allows you to make complex workflow.
 
+The Microservice Vertical Pattern allows you to run multiple models in order. The
+pattern deploys prediction models are deployed as separate services (in separate servers
+or containers).Prediction requests are executed synchronously and in order, with results
+aggregated and returned to the client
+
+- Each prediction service has a separate maintenance lifecycle and provides a level of
+  fault isolation for deploying the servers independently
+- A reverse proxy between the client and prediction services is responsible for handling
+  requests and responses, coordinating inference execution ordering and result
+  aggregation. Additional data retrieval may also be done by the proxy or each
+  predictor (`Diagram2`)
+- An advantage of the reverse proxy is that it provides an implicit caching mechanism
+  which reduces latency and the number of requests to a data warehouse or other backend
+  storage. Additionally, it abstracts away more complicated application logic from the
+  prediction services themselves, allowing for complex/robust workflows.
 
 ## Diagram
+
 ### Diagram1
+
 ![diagram1](diagram1.png)
 
-### Diagram2
+### Diagram2 (additional data retrieval by the proxy server or prediction services)
+
 ![diagram2](diagram2.png)
 
 ## Pros
-- You may run multiple predictions in order.
-- It is possible to select next prediction service depending on the former prediction.
-- You may make the resource usage efficient, independent in server and code, and isolate failure.
+
+- Multiple predictions may be executed in any order.?
+- Prediction services may be conditionally selected based on predictions of other
+  services.
+- Resource usage efficiency gains are possible as the proxy server and independent
+  prediction services can be given a separate set of resources conditioned upon their
+  particular workloads (i.e., GPUs for some prediction services, lots of RAM for the
+  proxy servers' in-memory cache)
+- A failure in a single service can be isolated from the overall system and remediated
+  conditionally (i.e., prediction services can have redundant replicas behind a load
+  balancer), improving uptime and availability.
 
 ## Cons
-- Since the predictions run synchronous order, it will require higher latency.
-- A former prediction latency may be bottleneck.
-- Complex system structure and workflow.
 
-## Needs consideration
-- You may need to consider concrete performance tuning to meet required service level.
-- The system structure will become complex. It is better to try to make the interfaces and servers common.
+- Significant prediction latency due to synchronous execution which may become a
+  performance bottleneck
+- Relatively more complex system architecture and workflow.
+
+## Considerations
+
+- Explicit performance tuning may be needed to ensure compliance with your SLA.
+- Standardized interfaces and servers become a necessity to deal with the more complex
+  system architecture and workflow

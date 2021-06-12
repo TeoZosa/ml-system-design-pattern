@@ -1,25 +1,50 @@
-# Prediction circuit break pattern
+# Prediction Circuit Breaker Pattern
 
-## Usecase
-- When there is a possibility that amount or frequency of request to prediction suddenly increases.
-- If it is not applicable to scale out so quick to respond the sudden request.
-- If it is not needed to respond 100%.
+## Use Case
+
+- When there is a possibility that the amount or frequency of prediction requests will
+  suddenly increase
+- If immediate scale out to respond the sudden request is not needed.
+- If a 100% response-rate is not necessary.
 
 ## Architecture
-There are occasions when the number of access to the web service, or related service, suddenly increases due to a campaign or external event. If you are using cloud service or Kubernetes, you can scale out your service to respond the requests, though there are many cases that the increase in amount of request is way beyond the speed of scale out. Especially when the server or container image contains model file, launching or downloading it may take a file.<br>
-The prediction circuit breaker pattern is an architecture to avoid `complete outage` until the scale out succeeds. It allows to predict as much as predictable, with cancelling requests more than a certain limit before reaching the prediction server. Thinking that the complete outage is the worst case, you may take into account that a partial outage is rather reasonable. It often happens that with high tide of request that the prediction server restarts which lessens prediction resource. It is reasonable to choose to cancel a certain number of request to stabilize the current prediction service, until the scale out completes to respond all the predictions.<br>
-The important point of the pattern is to have a fallback plan for cancelled requests. You have to minimize lowering user experience, and avoid stopping client activity. It is recommended to consider a workflow for cancellation.
+
+There are occasions when the number of access to the web service (or related service)
+suddenly increases due to a campaign or external event. If you are using a cloud
+provider and/or Kubernetes, you can auto-scale your service to respond to the requests.
+However, there are many cases when the increased number of requests can outpace the
+scale-out speed. This is especially true when the server or container image contains a
+model file and launching or downloading the file has a significant setup time.
+
+The prediction circuit breaker pattern is an architecture to avoid `complete outage`
+until the scale out event succeeds.
+
+- Prediction services faced with too many requests may fail and restart, temporarily
+  reducing the resource pool. Therefore, in order to stabilize the current prediction
+  service until the scale out completes, we service as many prediction requests as
+  possible, terminating requests above a certain limit at the reverse proxy server, only
+  forwarding remaining requests to the prediction server.
+- The important point of the pattern is to have a fallback plan for cancelled requests.
+  User experience degradations must be minimized and client activity should not stop. It
+  is recommended to consider a workflow for cancellation.
 
 ## Diagram
+
 ![diagram](diagram.png)
 
 ## Pros
-- Avoid complete outage of the service.
-- It allows to scale out prediction servers without lowering the current resource availability.
+
+- Avoid complete outage of the service; a partial outage is preferable to a complete
+  outage.
+- Prediction servers can be scaled out without lowering the current resource
+  availability.
 
 ## Cons
-- Require fallback plan for cancelled request.
 
-## Needs consideration
+- Requires a fallback plan for cancelled requests.
+
+## Considerations
+
 - Fallback plan and workflow for cancellation.
-- The circuit breaking limit should be high enough to respond on usual increase in service request.
+- The circuit breaking limit should be high enough to respond to usual increases in
+  service requests.

@@ -1,4 +1,4 @@
-# No logging pattern
+# No Logging Pattern
 
 ## Case
 - ログやプロファイルを取得していない状態。
@@ -22,5 +22,5 @@
 - 追跡可能なイベントログを定義し実装する。
 
 ## Related design pattern
-- [Prediction log pattern](./../../Prediction-log-pattern/design_ja.md)
-- [Prediction monitoring pattern](./../../Prediction-monitoring-pattern/design_ja.md)
+- [Prediction Log Pattern](./../../Prediction-log-pattern/design_ja.md)
+- [Prediction Monitoring Pattern](./../../Prediction-monitoring-pattern/design_ja.md)

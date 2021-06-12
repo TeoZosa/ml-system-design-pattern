@@ -1,6 +1,6 @@
-# Parameter-based serving pattern
+# Parameter-Based Serving Pattern
 
-## Usecase
+## Use Case
 - 推論器を変数で制御したい場合
 - ルールベースで制御が必要な推論が存在する場合
 
@@ -20,7 +20,7 @@ MLモデルは学習によってパラメータが固定されるため、一般
 - すべてのケースをルールベースでカバーできるわけではない。
 - ルールベースによる制御が増えることによる複雑化。
 
-## Needs consideration
+## Considerations
 - どのケースをどういうルールと変数で対応するか。
 
 ## Sample

@@ -1,6 +1,6 @@
-# Prediction log pattern
+# Prediction Log Pattern
 
-## Usecase
+## Use Case
 - 推論結果や所要時間、ログをもとにサービスを改善したいとき
 - ログの発生量が多く、ログを集約するDWHへの負荷に懸念があるとき
 - ログを用いてアラートを送りたいとき
@@ -21,7 +21,7 @@ MLシステムを組み込んだサービスを改善するためには推論結
 ## Cons
 - ログの量によってコストが増加する。
 
-## Needs consideration
+## Considerations
 - ログの収集頻度やログレベル
 - DWHへ格納する頻度や期間
 - 分析の目的
